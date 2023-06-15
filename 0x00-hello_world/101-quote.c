@@ -7,6 +7,9 @@
 */
 int main(void)
 {
-	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
+	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+	write(1, quote, sizeof(quote) - 1);
+
 	return (1);
 }
