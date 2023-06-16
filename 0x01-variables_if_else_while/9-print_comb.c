@@ -20,7 +20,6 @@ int main(void)
 			putchar(' ');
 		}
 
-		i++;
 	}
 	return (0);
 }
