@@ -1,0 +1,29 @@
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - Entry point
+ *
+ * Return: (0) Success
+ */
+int main(void)
+{
+	int i;
+	int k;
+
+	for (i = 0; i <= 9; i++)
+	{
+		putchar(i);
+
+		if (i == 9)
+		{
+			for (k = 97; k <= 102; k++)
+			{
+				putchar(k);
+			}
+		}
+	}
+	putchar('\n');
+	/* your code goes there */
+	return (0);
+}
