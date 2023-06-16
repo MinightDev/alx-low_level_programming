@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(i);
 
-		if (i == 9)
+		if (i == 57)
 		{
 			for (k = 97; k <= 102; k++)
 			{
