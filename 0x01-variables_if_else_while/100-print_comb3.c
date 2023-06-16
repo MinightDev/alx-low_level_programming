@@ -11,7 +11,6 @@ int main(void)
 {
 	int i = 0;
 	int j;
-	int sum = j + i;
 
 	while (i < 10)
 	{
@@ -24,7 +23,7 @@ int main(void)
 				putchar(i + '0');
 				putchar(j + '0');
 
-				if (sum != 17)
+				if (j + i != 17)
 				{
 					putchar(',');
 					putchar(' ');
