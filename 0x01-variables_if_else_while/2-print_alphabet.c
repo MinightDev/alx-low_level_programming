@@ -14,6 +14,7 @@ int main(void)
 	{
 		putchar(i);
 	}
+	putchar('\n');
 	/* your code goes there */
 	return (0);
 }
