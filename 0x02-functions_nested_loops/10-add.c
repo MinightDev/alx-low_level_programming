@@ -2,7 +2,9 @@
 /**
  * add - adds two integers and returns the result
  *
- * @n: takes the integer
+ * @n1: takes first number
+ *
+ * @n2: takes second number
  *
  * Return: (0) Success
  */
