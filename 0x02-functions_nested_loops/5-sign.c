@@ -2,12 +2,12 @@
 /**
  * print_sign - checks if its an alphabet
  *
- * @c: the character to check
+ * @c: the number to check
  *
  * Return: (0) Success
  */
 
-int print_sign(int c)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
