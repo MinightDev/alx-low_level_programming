@@ -1,18 +1,26 @@
 #include "main.h"
 /**
- * _abs - computes the absolute value of an int
- *
- * @r: the number to compute
+ * jack_bauer - prints every minute of the day of Jack Bauer
  *
  * Return: (0) Success
  */
 
-int _abs(int r)
+void jack_bauer(void)
 {
-	if (r < 0)
+	int hours;
+	int minutes;
+
+	for (hours = 0; hours < 24; hours++)
 	{
-		return (-r);
+		for (minutes = 0; minutes < 60; minutes++)
+		{
+			_putchar((hours / 10) + 48);
+			_putchar((hours % 10) + 48);
+			_putchar(':');
+			_putchar((minutes / 10) + 48);
+			_putchar((minutes % 10) + 48);
+			_putchar('\n);
+		}
 	}
 
-	return (r);
 }
