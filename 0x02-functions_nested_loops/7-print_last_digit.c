@@ -7,7 +7,7 @@
  * Return: (0) Success
  */
 
-int print_last_digit(int r)
+int print_last_digit(int)
 {
 	int ld = r % 10;
 
