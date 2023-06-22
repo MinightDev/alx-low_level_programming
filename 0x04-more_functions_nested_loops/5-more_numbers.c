@@ -20,7 +20,7 @@ void more_numbers(void)
 			if (j > 9)
 			{
 				_putchar(49);
-				j = j % 10;
+				k = j % 10;
 			}
 			putchar(k + 48);
 		}
