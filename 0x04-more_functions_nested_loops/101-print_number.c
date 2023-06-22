@@ -14,6 +14,9 @@ void print_number(int n)
 	{
 		n = -1 * n;
 		_putchar(45);
+	} else
+	{
+		n = n;
 	}
 
 	if (n / 10)
