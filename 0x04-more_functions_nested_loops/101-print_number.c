@@ -9,5 +9,20 @@
 
 int print_number(int n)
 {
-	_putchar
+	int num;
+
+	if (n < 0)
+	{
+		_putchar(35);
+		n = -1 * n;
+	}
+
+	while (n > 0)
+	{
+		num = n % 10;
+		_putchar(num + 48);
+		n = n / 10;
+	}
+
+
 }
