@@ -8,16 +8,11 @@
 
 int _isupper(int c)
 {
-	int i;
-
-	for (i = 65; i <= 90; i++)
+	if (c >= 65 && c <= 90)
 	{
-		if (c = _putchar(i))
-		{
-			return (1);
-		} else 
-		{
-			return (0);
-		}
+		return (1);
+	} else 
+	{
+		return (0);
 	}
 }
