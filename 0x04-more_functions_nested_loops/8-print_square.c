@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_square - prints a square
+ * print_triangle - prints a triangle follwoe by a new line
  *
- * @size: size of the square
+ * @size: size of the triangle
  *
  * Return: 0 if success
  */
