@@ -22,7 +22,7 @@ void more_numbers(void)
 				_putchar(49);
 				k = j % 10;
 			}
-			putchar(k + 48);
+			_putchar(k + 48);
 		}
 		_putchar('\n');
 	}
