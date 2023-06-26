@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - functions that prints every other character of a string
+ * puts_half - functions that prints half of a string
  * @str: the string to print
  *
  * Return: On success 1.
