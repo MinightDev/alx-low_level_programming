@@ -7,7 +7,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i;
 	int n;
