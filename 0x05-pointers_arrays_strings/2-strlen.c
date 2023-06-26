@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strlen - returns the length of a string
  * @s: the string to check
@@ -12,7 +11,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while(*s != NULL)
+	while(*s != '\0')
 	{
 		s++;
 		len++;
