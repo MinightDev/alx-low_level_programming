@@ -3,7 +3,7 @@
 /**
  * *_strcpy - functions that copies the string pointed by src
  * @dest: buffer
- * @src: the string 
+ * @src: the string
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
