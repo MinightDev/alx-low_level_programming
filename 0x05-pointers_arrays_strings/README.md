@@ -1,0 +1,1 @@
+Pointers Arrays n strings 👈
