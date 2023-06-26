@@ -1,14 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - functions that prints n elements of array
- * @a: the array
- * @n: numbers of elements
+ * *_strcpy - functions that copies the string pointed by src
+ * @dest: buffer
+ * @src: the string 
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
+	int i;
+	int size;
 
+	for (i = 0; src[i] != '\0'; i++)
+	{
+	}
+
+	for (size = 0; size <= i; size++)
+	{
+		dest[size] = src[size];
+	}
 }
