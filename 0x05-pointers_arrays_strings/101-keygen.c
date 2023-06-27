@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-	srand(time(0));
-
 	int i;
 	int sum = 0;
 	int chars[100];
 	int range = 78;
 	int size = sizeof(chars) / sizeof(chars[0]);
 	int n;
+
+	srand(time(0));
 
 	for (i = 0; i < size; i++)
 	{
