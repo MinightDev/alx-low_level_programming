@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	int size = 8	;
+	int size = 10;	;
 	srand(time(0));
 
 	for (i = 0; i <= size; i++)
