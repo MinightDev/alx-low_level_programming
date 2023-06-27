@@ -9,10 +9,9 @@
  */
 int main(void)
 {
-	srand(time(0));
-
 	int i;
 	int size = 20;
+	srand(time(0));
 
 	for (i = 0; i <= size; i++)
 	{
