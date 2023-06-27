@@ -18,4 +18,6 @@ int main(void)
 	{
 		printf("%c", rand() % (125 + 1 - 33) + 33);
 	}
+
+	return (0);
 }
