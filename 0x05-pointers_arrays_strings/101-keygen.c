@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	int size = 30;
+	int size = rand() % (20 + 1 - 30) + 30;
 	srand(time(0));
 
 	for (i = 0; i <= size; i++)
