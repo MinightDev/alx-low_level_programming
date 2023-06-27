@@ -16,12 +16,9 @@ int main(void)
 
 	for (i = 0; i <= size; i++)
 	{
-		int random1 = rand() % (57 + 1 - 48) + 48;
-		int random2 = rand() % (47 + 1 - 33) + 33;
-		int random3 = rand() % ('z' - 'a' + 1) + 'a';
-		int random4 = rand() % ('Z' - 'A' + 1) + 'A';
+		int random = rand() % (125 + 1 - 33) + 33;
 
-		printf("%c%c%c%c", random1, random2, random3, random4);
+		printf("%c", random);
 	}
 
 	return (0);
