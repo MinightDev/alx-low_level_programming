@@ -10,6 +10,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
+
 	for (i = 0; i < n; i++)
 	{
 		if (i <= n)
@@ -20,5 +21,6 @@ char *_memset(char *s, char b, unsigned int n)
 			s[i] = s[i];
 		}
 	}
+	return (s);
 
 }
