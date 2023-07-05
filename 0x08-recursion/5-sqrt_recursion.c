@@ -22,7 +22,7 @@ int _sqrt(int n, int i)
 		return (i);
 	} else if (i * i < n)
 	{
-		return (_sqrt(n, n + 1));
+		return (_sqrt(n, i + 1));
 	}
 	return (-1);
 }
