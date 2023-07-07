@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	} else if (argc > 0)
 	{
-		for (i = 1; < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			while (argv[i][len] != '\0')
 			{
@@ -31,13 +31,9 @@ int main(int argc, char *argv[])
 				}
 				len++;
 			}
+			sum = sum + atoi(argv[i]);
 		}
-
-	} else
-	{
-		sum = sum + atoi(argv[i]);
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
-
 	return (0);
 }
