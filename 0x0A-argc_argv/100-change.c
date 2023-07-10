@@ -11,15 +11,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int c = atoi(argv[1]);
-	int i = 0;
+	int c;
 	int change = 0;
+	int i = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	c = atoi(argv[1]);
 
 	if (c < 0)
 	{
