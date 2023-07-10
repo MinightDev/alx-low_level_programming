@@ -27,13 +27,21 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	for (; c >= 25; c = (c - 25), i++)
+	{
+	}
+	for (; c >= 10; c = (c - 10), i++)
+	{
+	}
+	for (; c >= 5; c = (c - 5), i++)
+	{
+	}
+	for (; c >= 2; c = (c - 2), i++)
+	{
+	}
 
-	for (; c >= 25; c = (c - 25), i++);
-	for (; c >= 10; c = (c - 10), i++);
-	for (; c >= 5; c = (c - 5), i++);
-	for (; c >= 2; c =( c - 2), i++);
+	change = (i + c);
 
-	change = i + c;
 	printf("%d\n", change);
 
 	return (0);
