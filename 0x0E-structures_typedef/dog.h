@@ -5,6 +5,7 @@
  * @name: string represents the dog's name.
  * @age: float represents the dog's age.
  * @owner: string represts the dog's owner name.
+ * Description: poppy.
  */
 struct dog
 {
