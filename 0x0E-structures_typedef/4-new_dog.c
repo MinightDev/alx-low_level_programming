@@ -12,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	unsigned int i = 0, j = 0, k = 0;
 
-	if (owner == NULLL || name == NULL)
+	if (owner == NULL || name == NULL)
 		return (NULL);
 	while (name[i])
 		i++;
@@ -35,13 +35,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	while (k < i)
+	{
 		dog->name[k] = name[k];
 		k++;
+	}
 	dog->age = age;
+	k = 0;
 
 	while (k < j)
 		dog->owner[k] = owner[k];
-		j++;
+		k++;
 
 	return (dog);
 }
