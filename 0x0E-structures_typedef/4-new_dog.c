@@ -10,6 +10,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	unsigned int i = 0, j = 0, k = 0;
+	dog_t *dog;
 
 	if (owner == NULL || name == NULL)
 		return (NULL);
@@ -19,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[j])
 		j++;
 	j++;
-	dog_t *dog = malloc(sizeof(dog_t));
+	dog = malloc(sizeof(dog_t));
 
 	if (dog == NULL)
 		return (NULL);
