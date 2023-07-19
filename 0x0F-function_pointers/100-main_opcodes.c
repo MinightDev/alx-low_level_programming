@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int bytes;
 	int i;
-	char *addr = (char *)main;
+	unsigned char *addr = (char *)main;
 
 	if (argc != 2)
 	{
