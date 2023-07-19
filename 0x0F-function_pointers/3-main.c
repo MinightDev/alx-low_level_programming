@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, result;
 	int (*operation)(int, int);
+	char i;
 
 	if (argc != 4)
 	{
@@ -25,7 +26,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+	i = argv[2][0];
+
+	if ((i == '/' || i == '%') && b == 0)
 	{
 		printf("Error\n");
 		return (100);
