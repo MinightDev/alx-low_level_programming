@@ -27,6 +27,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+	{
+		printf("Error\n");
+		return (100);
+	}
+
 	result = operation(a, b);
 	printf("%d\n", result);
 	return (0);
