@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char *separator = "";
+	const char *separator = "";
 	char c;
 	int i;
 	double f;
