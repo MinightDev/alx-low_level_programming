@@ -1,12 +1,16 @@
 section .data
     hello db "Hello, Holberton", 0
+    format db "%s", 0
 
 section .text
-    global _start
+    global main
+    extern printf
 
-_start:
+main:
     mov rbp, rsp
-    mov rdi, hello
+    mov rdi, format
+    mov rsi, hello
+    xor rax, rax
     call printf
 
     mov rax, 60
