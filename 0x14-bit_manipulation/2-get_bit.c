@@ -1,36 +1,19 @@
 #include "main.h"
 
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary.
+ * get_bit -  returns the value of a bit at a given index.
+ * @n: number
+ * @index: index
+ * Return:  value of the bit at index index or -1 if an error occured
  */
-void print_binary(unsigned long int n)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	int shift;
-	int zero = 1;
+	unsigned long int bit;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
+	if (index > sizeof(unsigned long int) * 8)
+		return (-1);
 
-	shift = (sizeof(n) * 8 - 1);
+	bit = n >> index;
 
-	while (shift >= 0)
-	{
-		unsigned long int bit = n >> shift;
-
-		if (bit & 1)
-		{
-			_putchar('1');
-			zero = 0;
-		}
-		else if (!zero)
-		{
-			_putchar('0');
-		}
-
-		shift--;
-	}
+	return (bit & 1);
 }
