@@ -8,6 +8,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int n = 0;
 	unsigned int i = 0;
+	unsigned int j;
 
 	if (b == NULL)
 	{
@@ -23,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	}
 
-	for (unsigned int j = 0; j < i; j++)
+	for (j = 0; j < i; j++)
 	{
 		n = n * 2 + (b[j] - '0');
 	}
