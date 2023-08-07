@@ -4,7 +4,6 @@
  * main - Entery point.
  *
  * @argc: argument count.
- *
  * @argv: argument value.
  *
  * Return: 0 if success.
