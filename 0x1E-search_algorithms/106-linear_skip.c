@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include "search_algos.h"
 
 /**
@@ -10,34 +7,39 @@
  * @value: value to search in
  * Return: index of the number
  */
-
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-	skiplist_t *express = list->express;
-	skiplist_t *prev = list;
+	skiplist_t *go;
 
 	if (list == NULL)
 		return (NULL);
 
-	while (express && express->n < value)
+	go = list;
+
+	do {
+		list = go;
+		go = go->express;
+		printf("Value checked at index ");
+		printf("[%d] = [%d]\n", (int)go->index, go->n);
+	} while (go->express && go->n < value);
+
+	if (go->express == NULL)
 	{
-		printf("Value checked at index [%lu] = [%d]\n", express->index, express->n);
-		prev = express;
-		express = express->express;
+		list = go;
+		while (go->next)
+			go = go->next;
 	}
 
-	printf("Value found between indexes [%lu] and [%lu]\n",
-			prev->index, express ? express->index : prev->index);
+	printf("Value found between indexes ");
+	printf("[%d] and [%d]\n", (int)list->index, (int)go->index);
 
-	while (prev && prev->n < value)
+	while (list != go->next)
 	{
-		printf("Value checked at index [%lu] = [%d]\n", prev->index, prev->n);
-		prev = prev->next;
+		printf("Value checked at index [%d] = [%d]\n", (int)list->index, list->n);
+		if (list->n == value)
+			return (list);
+		list = list->next;
 	}
-
-	if (prev && prev->n == value)
-		return (prev);
 
 	return (NULL);
 }
-
